@@ -1,16 +1,12 @@
-var username = prompt("enter user name")
-var phoneNumber = +prompt("enter phoneNumber")
-var emailAddress = prompt("enter email address")
-var password = prompt("Please enter your password: ")
-var confirmPassword = prompt("Confirm Password:")
+var word = prompt()
+var reverseword =""
+for(i=word.length-1;i>=0;i--){
+    reverseword+=word[i]
 
-if(username==""|| phoneNumber == ""||emailAddress== ""||password==""||confirmPassword==""){
-    alert('All fields must be filled out')
 }
+if(word===reverseword){
+    alert("the "+word+" is palindrom word")
 
-if(password===confirmPassword){
-    alert("Welcome , Your account has been created. Please log in to continue")
-
-} else {
-    alert("enter same password")
+}else{
+    alert("the "+word+" is not a palindrom word")
 }
